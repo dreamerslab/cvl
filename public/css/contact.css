@@ -22,7 +22,7 @@
   text-indent: -9999px;
   width: 198px;
   height: 22px;
-  background: url('/img/sprite-s8d8239f26b.png') no-repeat 0 -225px;
+  background: url('/img/sprite-s92ea87ebbe.png') no-repeat 0 -225px;
 }
 
 /* line 20, ../../app/sass/contact.sass */
@@ -31,10 +31,17 @@
   text-indent: -9999px;
   width: 199px;
   height: 61px;
-  background: url('/img/sprite-s8d8239f26b.png') no-repeat 0 -156px;
+  background: url('/img/sprite-s92ea87ebbe.png') no-repeat 0 -156px;
 }
 
-/* line 24, ../../app/sass/contact.sass */
+/* line 25, ../../app/sass/contact.sass */
+#contact-form .error {
+  float: left;
+  padding: 0 0 0 100px;
+  color: red;
+}
+
+/* line 30, ../../app/sass/contact.sass */
 #contact-form-wrap {
   position: absolute;
   top: 0;
@@ -42,7 +49,7 @@
   width: 300px;
 }
 
-/* line 30, ../../app/sass/contact.sass */
+/* line 36, ../../app/sass/contact.sass */
 .form-row {
   padding: 0 0 15px;
   position: relative;
@@ -50,68 +57,68 @@
   *zoom: 1;
 }
 
-/* line 35, ../../app/sass/contact.sass */
+/* line 41, ../../app/sass/contact.sass */
 #corp {
   padding: 0 0 33px;
 }
 
-/* line 38, ../../app/sass/contact.sass */
+/* line 44, ../../app/sass/contact.sass */
 #corp-title {
   float: left;
   text-indent: -9999px;
   width: 46px;
   height: 10px;
-  background: url('/img/sprite-s8d8239f26b.png') no-repeat 0 -286px;
+  background: url('/img/sprite-s92ea87ebbe.png') no-repeat 0 -286px;
 }
 
-/* line 42, ../../app/sass/contact.sass */
+/* line 48, ../../app/sass/contact.sass */
 #corp-email {
   margin: 0 80px 0 0;
   text-indent: -9999px;
   width: 120px;
   height: 11px;
-  background: url('/img/sprite-s8d8239f26b.png') no-repeat 0 -275px;
+  background: url('/img/sprite-s92ea87ebbe.png') no-repeat 0 -275px;
 }
 
-/* line 46, ../../app/sass/contact.sass */
+/* line 52, ../../app/sass/contact.sass */
 #contact-email, #contact-name {
   float: left;
   margin: 5px 0 0;
 }
 
-/* line 50, ../../app/sass/contact.sass */
+/* line 56, ../../app/sass/contact.sass */
 #contact-email {
   text-indent: -9999px;
   width: 80px;
   height: 8px;
-  background: url('/img/sprite-s8d8239f26b.png') no-repeat 0 -148px;
+  background: url('/img/sprite-s92ea87ebbe.png') no-repeat 0 -148px;
 }
 
-/* line 53, ../../app/sass/contact.sass */
+/* line 59, ../../app/sass/contact.sass */
 #contact-name {
   text-indent: -9999px;
   width: 65px;
   height: 8px;
-  background: url('/img/sprite-s8d8239f26b.png') no-repeat 0 -217px;
+  background: url('/img/sprite-s92ea87ebbe.png') no-repeat 0 -217px;
 }
 
-/* line 56, ../../app/sass/contact.sass */
+/* line 62, ../../app/sass/contact.sass */
 #message {
   height: 100px;
 }
 
-/* line 59, ../../app/sass/contact.sass */
+/* line 65, ../../app/sass/contact.sass */
 #send {
   position: absolute;
-  bottom: 15px;
+  top: 80px;
 }
 
-/* line 63, ../../app/sass/contact.sass */
+/* line 69, ../../app/sass/contact.sass */
 #message, #corp-email, .contact-input {
   float: right;
 }
 
-/* line 66, ../../app/sass/contact.sass */
+/* line 72, ../../app/sass/contact.sass */
 #message, .contact-input {
   color: white;
   width: 197px;
@@ -119,12 +126,12 @@
   border: 1px solid white;
 }
 
-/* line 72, ../../app/sass/contact.sass */
+/* line 78, ../../app/sass/contact.sass */
 #go-back {
   text-indent: -9999px;
   width: 25px;
   height: 8px;
   margin: 23px auto;
   display: block;
-  background: url('/img/sprite-s8d8239f26b.png') no-repeat 0 -53px;
+  background: url('/img/sprite-s92ea87ebbe.png') no-repeat 0 -53px;
 }

@@ -16,7 +16,7 @@ footer p {
   width: 213px;
   height: 45px;
   margin: 24px auto 25px;
-  background: url('/img/sprite-s8d8239f26b.png') no-repeat 0 0;
+  background: url('/img/sprite-s92ea87ebbe.png') no-repeat 0 0;
 }
 
 /* line 19, ../../../app/sass/common/footer.sass */
@@ -24,7 +24,7 @@ footer p {
   width: 106px;
   height: 28px;
   margin: 0 auto;
-  background: url('/img/sprite-s8d8239f26b.png') no-repeat 0 -247px;
+  background: url('/img/sprite-s92ea87ebbe.png') no-repeat 0 -247px;
 }
 
 /* line 25, ../../../app/sass/common/footer.sass */
@@ -34,5 +34,5 @@ footer p {
   height: 8px;
   margin: 23px auto;
   display: block;
-  background: url('/img/sprite-s8d8239f26b.png') no-repeat 0 -45px;
+  background: url('/img/sprite-s92ea87ebbe.png') no-repeat 0 -45px;
 }

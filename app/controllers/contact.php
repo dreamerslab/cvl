@@ -1,22 +1,26 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Contact extends CI_Controller{
-
+  
+  private $_data;
+  
   public function __construct()
   {
     parent::__construct();
 
     $this->load->helper('form');
+    
+    $this->_data['nav_selected'] = '';
+    $this->_data['contact_url']  = $this->input->get('from', TRUE);
+    $this->_data['contact_text'] = 'Go back';
+    $this->_data['from']         = '';
   }
   
   public function index()
   {
-    $data['nav_selected'] = '';
-    $data['contact_url']  = $this->input->get('from', TRUE);
-    $data['contact_text'] = 'Go back';
-    $data['from']         = '';
+    
     // render action view
-    $this->view->render($data);
+    $this->view->render($this->_data);
   }
 
   public function send()
@@ -41,7 +45,7 @@ class Contact extends CI_Controller{
 
         // and is asking for json format reply,
         // reply to client with json format
-        if($ajax == 1){
+        if($ajax){
           $this->_render_json(array('success'=>TRUE));
         }else{
 
@@ -55,7 +59,7 @@ class Contact extends CI_Controller{
         log_message('error', 'ERROR: /contact/send \n'.$this->email->print_debugger());
         
         // reply json string for ajax call
-        if($ajax == 1){
+        if($ajax){
           $this->_render_json(array('success'=>FALSE));
         }else{
 

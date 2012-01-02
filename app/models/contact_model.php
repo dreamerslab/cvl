@@ -14,17 +14,14 @@ class Contact_Model extends CI_Model{
     $config = array(
       array(
         'field' => 'name',
-        'label' => lang('contact.name'),
         'rules' => 'required'
       ),
       array(
         'field' => 'email',
-        'label' => lang('contact.email'),
         'rules' => 'required|valid_email'
       ),
       array(
-        'field' => 'comments',
-        'label' => lang('contact.comments'),
+        'field' => 'message',
         'rules' => 'required'
       )
     );
@@ -39,14 +36,14 @@ class Contact_Model extends CI_Model{
     $ip = $this->input->ip_address();
     $name = $this->input->post('name', TRUE);
     $email = $this->input->post('email', TRUE);
-    $comments = "IP: {$ip}\n\n{$this->input->post('comments', TRUE)}";
+    $message = "IP: {$ip}\n\n{$this->input->post('message', TRUE)}";
 
     $this->load->library('email');
 
     $this->email->from($email, $name);
-    $this->email->to('site@coverline.com.tw');
+    $this->email->to('ramon@coverline.com.tw');
     $this->email->subject("[coverline.com.tw]Comments");
-    $this->email->message($comments);
+    $this->email->message($message);
 
     return $this->email->send();
   }

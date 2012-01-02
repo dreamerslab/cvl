@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Errors extends CI_Controller{
+class Errors extends MY_Controller{
 
   public function __construct()
   {

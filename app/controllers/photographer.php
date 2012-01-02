@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Photographer extends CI_Controller {
+class Photographer extends MY_Controller {
 
   public function __construct()
   {

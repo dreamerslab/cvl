@@ -1,0 +1,120 @@
+/* line 6, ../../app/sass/photographer.sass */
+.gallery-desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 11, ../../app/sass/photographer.sass */
+#loki-homme {
+  text-indent: -9999px;
+  width: 263px;
+  height: 62px;
+  background: url('/img/sprite-s8d8239f26b.png') no-repeat 0 -653px;
+}
+
+/* line 14, ../../app/sass/photographer.sass */
+#minshi-homme {
+  text-indent: -9999px;
+  width: 263px;
+  height: 62px;
+  background: url('/img/sprite-s8d8239f26b.png') no-repeat 0 -797px;
+}
+
+/* line 17, ../../app/sass/photographer.sass */
+#jack-homme {
+  text-indent: -9999px;
+  width: 263px;
+  height: 62px;
+  background: url('/img/sprite-s8d8239f26b.png') no-repeat 0 -443px;
+}
+
+/* line 20, ../../app/sass/photographer.sass */
+#loki-femme {
+  text-indent: -9999px;
+  width: 263px;
+  height: 62px;
+  background: url('/img/sprite-s8d8239f26b.png') no-repeat 0 -591px;
+}
+
+/* line 23, ../../app/sass/photographer.sass */
+#minshi-femme {
+  text-indent: -9999px;
+  width: 263px;
+  height: 62px;
+  background: url('/img/sprite-s8d8239f26b.png') no-repeat 0 -735px;
+}
+
+/* line 26, ../../app/sass/photographer.sass */
+#jack-femme {
+  text-indent: -9999px;
+  width: 263px;
+  height: 62px;
+  background: url('/img/sprite-s8d8239f26b.png') no-repeat 0 -381px;
+}
+
+/* line 29, ../../app/sass/photographer.sass */
+#gallery {
+  position: relative;
+}
+/* line 32, ../../app/sass/photographer.sass */
+#gallery img {
+  float: left;
+}
+
+/* line 35, ../../app/sass/photographer.sass */
+#first-gallery-img {
+  border-right: 1px solid black;
+}
+
+/* line 38, ../../app/sass/photographer.sass */
+#last-gallery-img {
+  border-left: 1px solid black;
+}
+
+/* line 41, ../../app/sass/photographer.sass */
+#photographer-nav {
+  width: 476px;
+  padding: 0 10px;
+  font-size: 9px;
+  position: absolute;
+  left: 263px;
+  bottom: 0;
+}
+
+/* line 51, ../../app/sass/photographer.sass */
+#photographer-nav-pages .selected {
+  float: left;
+  padding: 2px 3px;
+  color: white;
+  text-decoration: underline;
+}
+
+/* line 57, ../../app/sass/photographer.sass */
+.photographer-nav-item {
+  float: left;
+  padding: 2px 3px;
+  color: #cccccc;
+}
+/* line 61, ../../app/sass/photographer.sass */
+.photographer-nav-item:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* line 65, ../../app/sass/photographer.sass */
+#portfolio-type {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  font-style: italic;
+}
+/* line 71, ../../app/sass/photographer.sass */
+#portfolio-type a {
+  color: #cccccc;
+}
+/* line 73, ../../app/sass/photographer.sass */
+#portfolio-type a:hover, #portfolio-type a.selected {
+  color: white;
+  text-decoration: underline;
+}

@@ -1,0 +1,44 @@
+# set to false if you don't want to use layout for default configs
+has_layout: true
+
+# default layout name
+layout: default
+
+#layouts
+default: # <-- this maps your layout file name
+  title: Coverline
+
+  metas:
+    # http metas goes here,
+    https:
+      content-type: text/html; charset=utf-8
+      content-language: en-US
+
+    name:
+      keywords: default, keywords, about, this, site
+      description: default description about this site
+      robots: index, follow
+
+  css:
+    # for those css file hosted on cdn you do not want to combine and minify put them here
+    cdn:
+
+    # all the files here will be combined to one css file  
+    site:
+      - common/reset
+      - common/util
+      - common/header
+      - common/base
+      - common/nav
+      - common/footer
+
+  # the usage is the same as css above
+  js:
+    cdn:
+      - https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min   
+
+    site:
+      - common/ga
+      
+# you can add more layouts here, just follow the pattern above
+

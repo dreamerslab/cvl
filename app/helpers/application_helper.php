@@ -119,7 +119,6 @@ if ( ! function_exists('pre_photo'))
       $pre_url = $page - 1;
       $url = "<a id=\"photo-previous\" {$class} href=\"".site_url("/photographer/{$nav_selected}/{$type}/{$pre_url}")."\"></a>";
     }
-    // $pre_url = "<a id=\"photo-previous\" {$class} href=\"".site_url("/photographer/{$nav_selected}/{$type}/{$pre_url}")."\"></a>";
     echo $url;
   }
 }
@@ -137,9 +136,16 @@ if ( ! function_exists('next_photo'))
 {
   function next_photo($page, $nav_selected, $type, $pages)
   {
-    $next_url = $page + 1 > $pages ? $page : $page + 1;
-
-    echo "<a id=\"photo-next\" href=\"".site_url("/photographer/{$nav_selected}/{$type}/{$next_url}")."\">$next_url</a>";
+    $class = "";
+    if ($page + 1 > $pages) {
+      $class = "class=\"nav_disable\"";
+      $pre_url = "#";
+      $url = "<a id=\"photo-next\" {$class} href=\"{$pre_url}\"></a>";
+    } else {
+      $pre_url = $page + 1;
+      $url = "<a id=\"photo-next\" {$class} href=\"".site_url("/photographer/{$nav_selected}/{$type}/{$pre_url}")."\"></a>";
+    }
+    echo $url;
   }
 }
 

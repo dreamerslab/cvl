@@ -1,9 +1,9 @@
 <div id="gallery-nav">
   <div id="gallery-nav-pages">
-    <div id="photo-switcher">
-      <?=pre_photo($page, $nav_selected, $type)?>
-      <?=next_photo($page, $nav_selected, $type, $pages)?>
-      <!--<a id="photo-next" href="#">Next</a>-->
+    <div id="gallery-pager">
+      <?$url = site_url("/photographer/{$nav_selected}/{$type}")?>
+      <?=pre_pager($page, $url)?>
+      <?=next_pager($page, $url, $pages)?>
     </div>
 
     <?for($i = 1; $i <= $pages; $i++):?>

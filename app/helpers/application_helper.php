@@ -106,20 +106,21 @@ if ( ! function_exists('contact'))
  * @param   string
  * @param   string
  */
-if ( ! function_exists('pre_photo'))
+if ( ! function_exists('pre_pager'))
 {
-  function pre_photo($page, $nav_selected, $type)
+  function pre_pager($page, $ori_url)
   {
-    $class = "";
+
     if ($page - 1 == 0) {
       $class = "class=\"nav_disable\"";
-      $pre_url = "#";
-      $url = "<a id=\"photo-previous\" {$class} href=\"{$pre_url}\"></a>";
+      $ori_url = "#";
+      $pre_url = "<a id=\"photo-previous\" {$class} href=\"{$ori_url}\"></a>";
     } else {
-      $pre_url = $page - 1;
-      $url = "<a id=\"photo-previous\" {$class} href=\"".site_url("/photographer/{$nav_selected}/{$type}/{$pre_url}")."\"></a>";
+      $class = "";
+      $page = $page - 1;
+      $pre_url = "<a id=\"photo-previous\" {$class} href=\"{$ori_url}/{$page}\"></a>";
     }
-    echo $url;
+    echo $pre_url;
   }
 }
 
@@ -132,20 +133,20 @@ if ( ! function_exists('pre_photo'))
  * @param   string
  * @param   string
  */
-if ( ! function_exists('next_photo'))
+if ( ! function_exists('next_pager'))
 {
-  function next_photo($page, $nav_selected, $type, $pages)
+  function next_pager($page, $ori_url, $pages)
   {
-    $class = "";
     if ($page + 1 > $pages) {
       $class = "class=\"nav_disable\"";
-      $pre_url = "#";
-      $url = "<a id=\"photo-next\" {$class} href=\"{$pre_url}\"></a>";
+      $ori_url = "#";
+      $next_url = "<a id=\"photo-next\" {$class} href=\"{$ori_url}\"></a>";
     } else {
-      $pre_url = $page + 1;
-      $url = "<a id=\"photo-next\" {$class} href=\"".site_url("/photographer/{$nav_selected}/{$type}/{$pre_url}")."\"></a>";
+      $class = "";
+      $page = $page + 1;
+      $next_url = "<a id=\"photo-next\" {$class} href=\"{$ori_url}/{$page}\"></a>";
     }
-    echo $url;
+    echo $next_url;
   }
 }
 

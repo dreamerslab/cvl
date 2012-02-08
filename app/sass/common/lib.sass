@@ -27,7 +27,7 @@ $sprite: sprite-map( "sprite/*.png" )
   -webkit-box-shadow: inset $x $y $blur $spread $color
   -moz-box-shadow: inset $x $y $blur $spread $color
   box-shadow: inset $x $y $blur $spread $color
-  
+
 @mixin box-gradient( $begin: black, $end: white, $switch : 100% )
   background-color:  $begin
   background: -webkit-gradient(linear, 0 0, 0 100%, from($begin), color-stop($switch, $end)) // Saf4+, Chrome
@@ -47,7 +47,7 @@ $sprite: sprite-map( "sprite/*.png" )
   -moz-transition: $what $length $easing
   -o-transition: $what $length $easing
   transition: $what $length $easing
-                  
+
 @mixin outline-radius( $radius: 3px )
   -webkit-outline-radius: $radius
   -moz-outline-radius: $radius
@@ -60,7 +60,7 @@ $sprite: sprite-map( "sprite/*.png" )
 
 @mixin box( $orient: horizontal, $pack: center, $align: center )
   display: -webkit-box
-  display: -moz-box	
+  display: -moz-box
   display: box
   -webkit-box-orient: $orient
   -moz-box-orient: $orient
@@ -117,7 +117,7 @@ $sprite: sprite-map( "sprite/*.png" )
   user-select: $select
 
 @mixin opacity( $opacity: 0 )
-  @if $opacity == 0 
+  @if $opacity == 0
     -moz-opacity: 0
     -khtml-opacity: 0
     opacity: 0

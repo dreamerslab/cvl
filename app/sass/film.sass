@@ -1,0 +1,39 @@
+@import "compass/utilities/general/clearfix"
+@import "common/lib"
+
+#video-nav
+  margin: 0 0 0 0
+
+.gallery-item
+  float: left
+  display: inline
+  width: 1024px
+
+#video-bg
+  float: left
+  display: inline
+
+#thubmnails
+  position: relative
+  float: left
+  display: inline
+  width: 264px
+
+.video-item
+  display: block
+  height: 134px
+
+#video-light
+  padding: 5px 0 0 0
+
+#video-previous, #video-next
+  position: absolute
+  left: 760px
+
+#video-previous
+  top: 0px
+  @include bg_text(263px, 27px, video-previous)
+
+#video-next
+  top: 379px
+  @include bg_text(263px, 27px, video-next)

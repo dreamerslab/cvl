@@ -97,5 +97,51 @@ if ( ! function_exists('contact'))
   }
 }
 
+// ------------------------------------------------------------------------
+
+/**
+ * generate url of previous photo
+ *
+ * @access  public
+ * @param   string
+ * @param   string
+ */
+if ( ! function_exists('pre_photo'))
+{
+  function pre_photo($page, $nav_selected, $type)
+  {
+    $class = "";
+    if ($page - 1 == 0) {
+      $class = "class=\"nav_disable\"";
+      $pre_url = "#";
+      $url = "<a id=\"photo-previous\" {$class} href=\"{$pre_url}\"></a>";
+    } else {
+      $pre_url = $page - 1;
+      $url = "<a id=\"photo-previous\" {$class} href=\"".site_url("/photographer/{$nav_selected}/{$type}/{$pre_url}")."\"></a>";
+    }
+    // $pre_url = "<a id=\"photo-previous\" {$class} href=\"".site_url("/photographer/{$nav_selected}/{$type}/{$pre_url}")."\"></a>";
+    echo $url;
+  }
+}
+
+// ------------------------------------------------------------------------
+
+/**
+ * generate url of next photo
+ *
+ * @access  public
+ * @param   string
+ * @param   string
+ */
+if ( ! function_exists('next_photo'))
+{
+  function next_photo($page, $nav_selected, $type, $pages)
+  {
+    $next_url = $page + 1 > $pages ? $page : $page + 1;
+
+    echo "<a id=\"photo-next\" href=\"".site_url("/photographer/{$nav_selected}/{$type}/{$next_url}")."\">$next_url</a>";
+  }
+}
+
 /* End of file application_helper.php */
 /* Location: ./app/helpers/application_helper.php */

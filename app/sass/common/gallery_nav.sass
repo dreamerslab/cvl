@@ -1,8 +1,12 @@
+@import "common/lib"
+
+@mixin info( $name )
+  @include bg_text( 263px, 54px, $name )
+
 .gallery-desc
   position: absolute
-  bottom: 0
-  left: 0
-
+  top: 0
+  right: 0
 #gallery
   position: relative
 
@@ -16,11 +20,12 @@
   border-left: 1px solid black
 
 #gallery-nav
+  background: url('/img/photographer/nav/photographer-nav-bg.png') no-repeat
   width: 476px
-  padding: 0 10px
+  padding: 7px 10px 0
   font-size: 9px
   position: absolute
-  left: 263px
+  left: 264px
   bottom: 0
 
 #gallery-nav-pages
@@ -30,6 +35,22 @@
     padding: 2px 3px
     color: white
     text-decoration: underline
+
+#photo-previous, #photo-next
+  position: absolute
+  bottom: 0px
+
+.nav_disable
+  opacity: 0.4
+  cursor: default
+
+#photo-previous
+  left: -264px
+  @include bg_text(263px, 27px, photo-previous)
+
+#photo-next
+  right: -264px
+  @include bg_text(263px, 27px, photo-next)
 
 .gallery-nav-item
   float: left

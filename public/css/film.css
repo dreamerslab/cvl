@@ -1,0 +1,60 @@
+/* line 4, ../../app/sass/film.sass */
+#video-nav {
+  margin: 0 0 0 0;
+}
+
+/* line 7, ../../app/sass/film.sass */
+.gallery-item {
+  float: left;
+  display: inline;
+  width: 1024px;
+}
+
+/* line 12, ../../app/sass/film.sass */
+#video-bg {
+  float: left;
+  display: inline;
+}
+
+/* line 16, ../../app/sass/film.sass */
+#thubmnails {
+  position: relative;
+  float: left;
+  display: inline;
+  width: 264px;
+}
+
+/* line 22, ../../app/sass/film.sass */
+.video-item {
+  display: block;
+  height: 134px;
+}
+
+/* line 26, ../../app/sass/film.sass */
+#video-light {
+  padding: 5px 0 0 0;
+}
+
+/* line 29, ../../app/sass/film.sass */
+#video-previous, #video-next {
+  position: absolute;
+  left: 760px;
+}
+
+/* line 33, ../../app/sass/film.sass */
+#video-previous {
+  top: 0px;
+  text-indent: -9999px;
+  width: 263px;
+  height: 27px;
+  background: url('/img/sprite-sdcce2ec0f4.png') no-repeat 0 -987px;
+}
+
+/* line 37, ../../app/sass/film.sass */
+#video-next {
+  top: 379px;
+  text-indent: -9999px;
+  width: 263px;
+  height: 27px;
+  background: url('/img/sprite-sdcce2ec0f4.png') no-repeat 0 -960px;
+}

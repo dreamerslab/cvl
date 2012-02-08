@@ -1,0 +1,72 @@
+/* line 1, ../../../app/sass/common/gallery_nav.sass */
+.gallery-desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 6, ../../../app/sass/common/gallery_nav.sass */
+#gallery {
+  position: relative;
+}
+/* line 9, ../../../app/sass/common/gallery_nav.sass */
+#gallery img {
+  float: left;
+}
+
+/* line 12, ../../../app/sass/common/gallery_nav.sass */
+#first-gallery-img {
+  border-right: 1px solid black;
+}
+
+/* line 15, ../../../app/sass/common/gallery_nav.sass */
+#last-gallery-img {
+  border-left: 1px solid black;
+}
+
+/* line 18, ../../../app/sass/common/gallery_nav.sass */
+#gallery-nav {
+  width: 476px;
+  padding: 0 10px;
+  font-size: 9px;
+  position: absolute;
+  left: 263px;
+  bottom: 0;
+}
+
+/* line 28, ../../../app/sass/common/gallery_nav.sass */
+#gallery-nav-pages .selected {
+  float: left;
+  padding: 2px 3px;
+  color: white;
+  text-decoration: underline;
+}
+
+/* line 34, ../../../app/sass/common/gallery_nav.sass */
+.gallery-nav-item {
+  float: left;
+  padding: 2px 3px;
+  color: #cccccc;
+}
+/* line 38, ../../../app/sass/common/gallery_nav.sass */
+.gallery-nav-item:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* line 42, ../../../app/sass/common/gallery_nav.sass */
+#gender-type {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  font-style: italic;
+}
+/* line 48, ../../../app/sass/common/gallery_nav.sass */
+#gender-type a {
+  color: #cccccc;
+}
+/* line 50, ../../../app/sass/common/gallery_nav.sass */
+#gender-type a:hover, #gender-type a.selected {
+  color: white;
+  text-decoration: underline;
+}

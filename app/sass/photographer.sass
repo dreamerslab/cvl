@@ -3,11 +3,6 @@
 @mixin info( $name )
   @include bg_text( 263px, 54px, $name )
 
-.gallery-desc
-  position: absolute
-  bottom: 0
-  left: 0
-
 #loki-homme
   @include info(loki-homme)
 
@@ -25,51 +20,3 @@
 
 #jack-femme
   @include info(jack-femme)
-
-#gallery
-  position: relative
-
-  img
-    float: left
-
-#first-gallery-img
-  border-right: 1px solid black
-
-#last-gallery-img
-  border-left: 1px solid black
-
-#photographer-nav
-  width: 476px
-  padding: 0 10px
-  font-size: 9px
-  position: absolute
-  left: 263px
-  bottom: 0
-
-#photographer-nav-pages
-
-  .selected
-    float: left
-    padding: 2px 3px
-    color: white
-    text-decoration: underline
-
-.photographer-nav-item
-  float: left
-  padding: 2px 3px
-  color: #ccc
-  &:hover
-    color: white
-    text-decoration: underline
-
-#portfolio-type
-  position: absolute
-  right: 10px
-  bottom: 0
-  font-style: italic
-
-  a
-    color: #ccc
-    &:hover, &.selected
-      color: white
-      text-decoration: underline

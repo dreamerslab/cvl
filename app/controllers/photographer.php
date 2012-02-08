@@ -18,10 +18,12 @@ class Photographer extends MY_Controller {
     $data['type']         = $type;
     $data['page']         = $page;
     $data['pages']        = count($data['photographer']['portfolio'][$type]);
-    if( $data['page'] > $data['pages'] ) $page = $data['page'] = $data['pages'];
-    $data['img_prefix']   = "/img/photographer/{$name}/{$type}/{$page}/";
-    $data['url_prefix']   = "/photographer/{$name}/{$type}/";
-    $data['from']         = "?from=photographer/{$name}/{$type}/{$page}";
+
+    if( $data['page'] > $data['pages']) $page = $data['page'] = $data['pages'];
+
+    $data['img_prefix'] = "/img/photographer/{$name}/{$type}/{$page}/";
+    $data['url_prefix'] = "/photographer/{$name}/{$type}/";
+    $data['from']       = "?from=photographer/{$name}/{$type}/{$page}";
 
     $this->view->render($data);
   }

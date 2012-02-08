@@ -97,22 +97,5 @@ if ( ! function_exists('contact'))
   }
 }
 
-// ------------------------------------------------------------------------
-
-/**
- * portfolio type link
- *
- * @access  public
- * @param   string
- * @param   string
- */
-if ( ! function_exists('portfolio_type'))
-{
-  function portfolio_type($name, $type, $page)
-  {
-    echo site_url("/photographer/{$name}/{$type}/{$page}");
-  }
-}
-
 /* End of file application_helper.php */
 /* Location: ./app/helpers/application_helper.php */

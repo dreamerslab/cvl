@@ -8,7 +8,7 @@ if(!isset($nav_selected)) {
     <li id="fashion">
       <h2 id="fashion-title">Fashion</h2>
       <h3>
-        <a class="<?selected('fashion', $nav_selected)?>" id="fashion-subtitle" href="<?=site_url('fashion')?>">
+        <a class="<?selected('fashion', $nav_selected)?>" id="fashion-subtitle" href="<?=site_url('fashion/1')?>">
           Boutique, Advertising
         </a>
       </h3>
@@ -50,7 +50,7 @@ if(!isset($nav_selected)) {
     <li id="artists">
       <h2 id="artists-title">Artist</h2>
       <h3>
-        <a class="<?selected('artists', $nav_selected)?>" id="artists-subtitle" href="<?=site_url('artists')?>">
+        <a class="<?selected('artists', $nav_selected)?>" id="artists-subtitle" href="<?=site_url('artists/homme/1')?>">
           The Stylist, beauty
         </a>
       </h3>

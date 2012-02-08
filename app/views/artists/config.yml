@@ -1,0 +1,8 @@
+index:
+
+  title:
+    Coverline | Artists
+
+  css:
+    site:
+      - common/gallery_nav

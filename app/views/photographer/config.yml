@@ -1,8 +1,9 @@
 index:
-  
+
   title:
     Coverline | Photographer
-  
+
   css:
     site:
+      - common/gallery_nav
       - photographer

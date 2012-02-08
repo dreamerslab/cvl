@@ -112,13 +112,13 @@ if ( ! function_exists('pre_pager'))
   {
 
     if ($page - 1 == 0) {
-      $class = "class=\"nav_disable\"";
+      $class = "class=\"nav-disable\"";
       $ori_url = "#";
       $pre_url = "<a id=\"photo-previous\" {$class} href=\"{$ori_url}\"></a>";
     } else {
       $class = "";
       $page = $page - 1;
-      $pre_url = "<a id=\"photo-previous\" {$class} href=\"{$ori_url}/{$page}\"></a>";
+      $pre_url = "<a id=\"photo-previous\" {$class} href=\"{$ori_url}/{$page}\">{$page}</a>";
     }
     echo $pre_url;
   }
@@ -138,13 +138,13 @@ if ( ! function_exists('next_pager'))
   function next_pager($page, $ori_url, $pages)
   {
     if ($page + 1 > $pages) {
-      $class = "class=\"nav_disable\"";
+      $class = "class=\"nav-disable\"";
       $ori_url = "#";
       $next_url = "<a id=\"photo-next\" {$class} href=\"{$ori_url}\"></a>";
     } else {
       $class = "";
       $page = $page + 1;
-      $next_url = "<a id=\"photo-next\" {$class} href=\"{$ori_url}/{$page}\"></a>";
+      $next_url = "<a id=\"photo-next\" {$class} href=\"{$ori_url}/{$page}\">{$page}</a>";
     }
     echo $next_url;
   }

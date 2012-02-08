@@ -1,9 +1,9 @@
 <div id="gallery-nav">
   <div id="gallery-nav-pages">
     <div id="gallery-pager">
-      <?$url = site_url("/fashion")?>
-      <?=pre_pager($page, $url)?>
-      <?=next_pager($page, $url, $pages)?>
+      <?$ori_url = site_url("/fashion")?>
+      <?=pre_pager($page, $ori_url)?>
+      <?=next_pager($page, $ori_url, $pages)?>
     </div>
 
     <?for($i = 1; $i <= $pages; $i++):?>

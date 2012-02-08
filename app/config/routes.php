@@ -65,9 +65,6 @@
 */
 
 $route['default_controller']                      = "home";
-// $route['404_override']                            = 'errors/error_404';
-// $route['photographer']                            = $route['404_override'];
-// $route['photographer/index']                      = $route['404_override'];
 $route['photographer/index/(:any)/(:any)/(:num)'] = "photographer/index/$1/$2/$3";
 $route['photographer/(:any)/(:any)/(:num)']       = "photographer/index/$1/$2/$3";
 

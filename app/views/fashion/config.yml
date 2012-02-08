@@ -1,0 +1,8 @@
+index:
+
+  title:
+    Coverline | Fashion
+
+  css:
+    site:
+      - common/gallery_nav

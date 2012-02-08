@@ -64,7 +64,11 @@
 |
 */
 
-$route['default_controller']                      = "home";
+$route['default_controller'] = "home";
+
+$route['artists/index/(:any)/(:num)'] = "artists/index/$1/$2";
+$route['artists/(:any)/(:num)']       = "artists/index/$1/$2";
+
 $route['photographer/index/(:any)/(:any)/(:num)'] = "photographer/index/$1/$2/$3";
 $route['photographer/(:any)/(:any)/(:num)']       = "photographer/index/$1/$2/$3";
 
